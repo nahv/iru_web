@@ -3,7 +3,7 @@ var controller = new ScrollMagic.Controller();
 
 // Animación para about section
 var aboutScene = new ScrollMagic.Scene({
-  triggerElement: '.section#about',
+  triggerElement: '.section#befabout',
   triggerHook: 0.8,
   duration: '80%',
 })
