@@ -5,7 +5,7 @@ var controller = new ScrollMagic.Controller();
 var aboutScene = new ScrollMagic.Scene({
   triggerElement: '.section#about',
   triggerHook: 0.8,
-  duration: '150%',
+  duration: '80%',
 })
   .addTo(controller)
   .on('progress', function (e) {
@@ -25,7 +25,7 @@ var aboutScene = new ScrollMagic.Scene({
 var contactScene = new ScrollMagic.Scene({
   triggerElement: '.section#contact',
   triggerHook: 0.8,
-  duration: '100%',
+  duration: '80%',
 })
   .addTo(controller)
   .on('progress', function (e) {
