@@ -11,7 +11,7 @@ var aboutScene = new ScrollMagic.Scene({
   .on('progress', function (e) {
     var progress = e.progress.toFixed(2);
     var scrollPos = progress * 400;
-    var gradientColors = 'linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(232, 70, 59, 1), rgba(237, 187, 28, 1), rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) ' + scrollPos + '%)';
+    var gradientColors = 'linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(232, 70, 59, 1), rgba(237, 187, 28, 1), rgba(255, 255, 255, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) ' + scrollPos + '%)';
     document.querySelector('.section#befabout').style.background = gradientColors;
 
     // Parallax Effect 
