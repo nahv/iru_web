@@ -26,9 +26,27 @@ var aboutScene = new ScrollMagic.Scene({
     }
   });
 
+// Animación para after about section
+var contactScene = new ScrollMagic.Scene({
+  triggerElement: '.section#aftabout',
+  triggerHook: 0.8,
+  duration: '80%',
+})
+  .addTo(controller)
+  .on('progress', function (e) {
+    var progress = e.progress.toFixed(2);
+    // Show content
+    var contentElement = document.querySelector('.section#aftabout .container');
+    if (contentElement) {
+      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 2;
+      contentElement.style.opacity = contentOpacity;
+    }
+  });
+
+
 // Animación para contact section
 var contactScene = new ScrollMagic.Scene({
-  triggerElement: '.section#contact',
+  triggerElement: '.section#befcontact',
   triggerHook: 0.8,
   duration: '80%',
 })
@@ -37,16 +55,33 @@ var contactScene = new ScrollMagic.Scene({
     var progress = e.progress.toFixed(2);
     var scrollPos = progress * 400;
     var gradientColors = 'linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(232, 70, 59, 1), rgba(237, 187, 28, 1), rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) ' + scrollPos + '%)';
-    document.querySelector('.section#contact').style.background = gradientColors;
+    document.querySelector('.section#befcontact').style.background = gradientColors;
 
     // Parallax Effect 
     var parallaxOffset = progress * 20;
-    document.querySelector('.section#contact').style.backgroundPositionY = '-' + parallaxOffset + 'px';
+    document.querySelector('.section#befcontact').style.backgroundPositionY = '-' + parallaxOffset + 'px';
 
     // Show content
-    var contentElement = document.querySelector('.section#contact .container');
+    var contentElement = document.querySelector('.section#befcontact .container');
     if (contentElement) {
       var contentOpacity = progress < 0.1 ? 1 : (progress - 0.8) * 2;
+      contentElement.style.opacity = contentOpacity;
+    }
+  });
+
+  // Animación para eventos section
+var contactScene = new ScrollMagic.Scene({
+  triggerElement: '.section#events',
+  triggerHook: 0.8,
+  duration: '80%',
+})
+  .addTo(controller)
+  .on('progress', function (e) {
+    var progress = e.progress.toFixed(2);
+    // Show content
+    var contentElement = document.querySelector('.section#events .container');
+    if (contentElement) {
+      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 2;
       contentElement.style.opacity = contentOpacity;
     }
   });
