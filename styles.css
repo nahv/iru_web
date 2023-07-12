@@ -51,6 +51,10 @@ nav ul li a {
   align-items: center;
 }
 
+.heading-container h2 {
+  font-size: 50px;
+}
+
 .heading-container h3 {
   margin-top: -150px;
   margin-left: 30px; /* Adjust the margin as needed */
