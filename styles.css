@@ -49,7 +49,7 @@ nav ul li a {
 /* Hero section styles */
 .hero {
   position: relative;
-  height: 32rem; /* Ajuste*/
+  height: 40rem; /* Ajuste*/
   overflow: hidden;
   background-image: url("./src/IMG-logo.jpg");
   background-repeat: no-repeat;
