@@ -41,9 +41,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
   color: rgb(237, 187, 28);
+  text-decoration: none;
 }
 
 .heading-container {
