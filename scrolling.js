@@ -12,11 +12,11 @@ var aboutScene = new ScrollMagic.Scene({
     var progress = e.progress.toFixed(2);
     var scrollPos = progress * 400;
     var gradientColors = 'linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(232, 70, 59, 1), rgba(237, 187, 28, 1), rgba(255, 255, 255, 1), rgba(0, 0, 0, 1) ' + scrollPos + '%)';
-    document.querySelector('.section#about').style.background = gradientColors;
+    document.querySelector('.section#befabout').style.background = gradientColors;
 
     // Parallax Effect 
     var parallaxOffset = progress * 20;
-    document.querySelector('.section#about').style.backgroundPositionY = '-' + parallaxOffset + 'px';
+    document.querySelector('.section#befabout').style.backgroundPositionY = '-' + parallaxOffset + 'px';
 
     // Show content
     var contentElement = document.querySelector('.section#about .container');
