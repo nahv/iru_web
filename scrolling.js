@@ -51,3 +51,19 @@ var contactScene = new ScrollMagic.Scene({
     }
   });
 
+
+// Smooth scrolling
+document.querySelectorAll('nav .nav-links li a').forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var target = document.querySelector(this.getAttribute('href'));
+    var offset = target.offsetTop;
+
+    window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+    });
+  });
+});
+
