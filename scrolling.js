@@ -46,7 +46,7 @@ var contactScene = new ScrollMagic.Scene({
     // Show content
     var contentElement = document.querySelector('.section#contact .container');
     if (contentElement) {
-      var contentOpacity = progress < 0.5 ? 0 : (progress - 0.5) * 2;
+      var contentOpacity = progress < 0.1 ? 1 : (progress - 0.8) * 2;
       contentElement.style.opacity = contentOpacity;
     }
   });

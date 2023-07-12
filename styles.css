@@ -67,7 +67,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.041);
+  background-color: rgba(0, 0, 0, 0.007);
   color: #fff;
 }
 
@@ -78,13 +78,14 @@ nav ul li a {
 
 /* Section styles */
 .section {
-  padding: 10px 0;
+  padding: 8rem 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .section h2 {
   font-size: 32px;
   margin-bottom: 10px;
+  margin-top: -6rem;
 }
 
 /* Image grid styles */
