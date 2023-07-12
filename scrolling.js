@@ -17,9 +17,14 @@ var aboutScene = new ScrollMagic.Scene({
     // Parallax Effect 
     var parallaxOffset = progress * 20;
     document.querySelector('.section#about').style.backgroundPositionY = '-' + parallaxOffset + 'px';
+
+    // Show content
+    var contentElement = document.querySelector('.section#about .container');
+    if (contentElement) {
+      var contentOpacity = progress < 0.5 ? 0 : (progress - 0.5) * 2;
+      contentElement.style.opacity = contentOpacity;
+    }
   });
-
-
 
 // Animación para contact section
 var contactScene = new ScrollMagic.Scene({
@@ -37,4 +42,12 @@ var contactScene = new ScrollMagic.Scene({
     // Parallax Effect 
     var parallaxOffset = progress * 20;
     document.querySelector('.section#contact').style.backgroundPositionY = '-' + parallaxOffset + 'px';
+
+    // Show content
+    var contentElement = document.querySelector('.section#contact .container');
+    if (contentElement) {
+      var contentOpacity = progress < 0.5 ? 0 : (progress - 0.5) * 2;
+      contentElement.style.opacity = contentOpacity;
+    }
   });
+
