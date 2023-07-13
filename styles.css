@@ -50,20 +50,20 @@ nav ul li a {
   align-items: center;
 }
 
-.heading-container h2 {
+.heading-container b {
   font-size: 90px;
 }
 
 .heading-container h3 {
   margin-top: -150px;
-  margin-left: 30px; /* Adjust the margin as needed */
+  margin-left: 30px; /* Ajustar */
 }
 
 
 /* Hero section styles */
 .hero {
   position: relative;
-  height: 40rem; /* Ajuste*/
+  height: 40rem; /* Ajustar */
   overflow: hidden;
   background-image: url("./src/IMG-logo.jpg");
   background-repeat: no-repeat;
@@ -119,8 +119,6 @@ nav ul li a {
   font-size: 30px;
 }
 
-
-
 /* Image grid styles */
 .image-grid {
   display: grid;
@@ -136,17 +134,32 @@ nav ul li a {
 /* Social media icons styles */
 .social-media-icons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-right: 100px;
 }
 
 .social-media-icons a {
-  margin-right: 25px;
+  padding: 15px;
 }
 
 .social-media-icons img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
+}
+
+
+#events {
+  margin-top: -10rem;
+  text-align: right;
+}
+
+.flyer {
+  width: 100%;
+}
+
+.befcontact {
+  margin-top: -100px;
 }
 
 /* Footer styles */
@@ -171,4 +184,57 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+
+/* ARROW animation*/
+.center
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 60px;
+    border-left: 6px dashed rgba(255,255,255,.1);
+}
+.arrow
+{
+    position: absolute;
+    top: 0;
+    left: -6px;
+    height: 40px;
+    width: 6px;
+    background: #000000;
+    animation: animate 4s infinite;
+}
+.arrow:before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 6px solid #000000;
+    border-right: 6px solid #000000;
+    transform: rotate(45deg);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    50%
+    {
+        transform: translateY(80px);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(160px);
+        opacity: 0;
+    }
 }

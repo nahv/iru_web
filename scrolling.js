@@ -38,7 +38,7 @@ var contactScene = new ScrollMagic.Scene({
     // Show content
     var contentElement = document.querySelector('.section#aftabout .container');
     if (contentElement) {
-      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 2;
+      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 5;
       contentElement.style.opacity = contentOpacity;
     }
   });
@@ -81,7 +81,7 @@ var contactScene = new ScrollMagic.Scene({
     // Show content
     var contentElement = document.querySelector('.section#events .container');
     if (contentElement) {
-      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 2;
+      var contentOpacity = progress < 0.1 ? 0 : (progress - 0.5) * 5;
       contentElement.style.opacity = contentOpacity;
     }
   });
