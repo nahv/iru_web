@@ -9,7 +9,6 @@ li {
   padding: 0;
 }
 
-
 /* Animaciones*/
 
 @keyframes slideInFromUp {
@@ -125,6 +124,7 @@ nav ul li a {
 h3 {
   position: relative;
   display: inline-block;
+  font-size: 1.1rem;
 }
 
 h3::after {
@@ -133,10 +133,10 @@ h3::after {
   bottom: 0;
   left: 0;
   width: 110%;
-  height: 11px;
+  height: 13px;
   background-color: rgba(232, 70, 59, .9);
-  transform: rotate(-5deg) scaleX(1.1);
-  border-radius: 10% 25% 50% 24%;
+  transform: rotate(-5deg) scaleX(1.2);
+  border-radius: 5% 5% 50% 50%;
 
   z-index: -1;
 }
